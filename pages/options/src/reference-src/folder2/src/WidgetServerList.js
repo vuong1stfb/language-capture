@@ -1,0 +1,47 @@
+export const widgetServerList = [
+  {
+    name: 'Auto-select',
+    abbr: 'auto_select',
+    widgetURL: null,
+    pushURL: null,
+    pullURL: null,
+    pingURL: null,
+    isDisabled: false,
+  },
+  {
+    name: 'Personal Server',
+    abbr: 'personal_server',
+    widgetURL: 'https://st-widget-<id>.kappaflow.dev/',
+    pushURL: 'https://st-widget-<id>.kappaflow.dev/push/',
+    pullURL: 'https://st-widget-<id>.kappaflow.dev/pull/',
+    pingURL: null, //to not interfere with auto_select
+    isDisabled: false,
+  },
+  {
+    name: 'Europe',
+    abbr: 'st-widget-eu-w1',
+    widgetURL: 'https://st-widget-eu-w1.kappaflow.dev/',
+    pushURL: 'https://st-widget-eu-w1.kappaflow.dev/push/',
+    pullURL: 'https://st-widget-eu-w1.kappaflow.dev/pull/',
+    pingURL: 'https://st-widget-eu-w1.kappaflow.dev/ping',
+    isDisabled: false,
+  },
+  {
+    name: 'US',
+    abbr: 'st-widget-us-c1',
+    widgetURL: 'https://st-widget-us-c1.kappaflow.dev/',
+    pushURL: 'https://st-widget-us-c1.kappaflow.dev/push/',
+    pullURL: 'https://st-widget-us-c1.kappaflow.dev/pull/',
+    pingURL: 'https://st-widget-us-c1.kappaflow.dev/ping',
+    isDisabled: false,
+  },
+  {
+    name: 'Asia',
+    abbr: 'st-widget-asia-ne3',
+    widgetURL: 'https://st-widget-asia-ne3.kappaflow.dev/',
+    pushURL: 'https://st-widget-asia-ne3.kappaflow.dev/push/',
+    pullURL: 'https://st-widget-asia-ne3.kappaflow.dev/pull/',
+    pingURL: 'https://st-widget-asia-ne3.kappaflow.dev/ping',
+    isDisabled: false,
+  },
+];
