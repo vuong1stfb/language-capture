@@ -35,6 +35,7 @@ const LanguageCapture: React.FC<LanguageCaptureProps> = props => {
   };
 
   const onResult = (event: SpeechRecognitionEvent) => {
+    console.log(event);
     let finalTranscript = '';
     let interimTranscript = '';
     for (let i = event.resultIndex; i < event.results.length; ++i) {
