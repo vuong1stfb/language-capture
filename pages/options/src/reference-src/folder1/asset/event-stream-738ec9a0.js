@@ -174,4 +174,4 @@ async function P(e, r, a = null) {
 function A(e, r) {
   return new URL(e.replace('<id>', r.slice(0, 6)));
 }
-export { A as a, x as b, w as c, P as e, h as t };
+export { A as a, x as b, w as checkGoogleTranslate, P as e, h as t };

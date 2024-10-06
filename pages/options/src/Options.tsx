@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import LanguageCapture from './component/LanguageCapture';
+import { defaultSettings } from './data/DefaultSettings';
 
 const Options: React.FC = () => {
   // const [listCaptions, setListCaptions] = useState<Caption[]>([]);
@@ -30,7 +31,7 @@ const Options: React.FC = () => {
   return (
     <div>
       <h1>Speech Recognition Popup</h1>
-      <LanguageCapture _settings={{ speechLang: { name: 'en-US' } }} />
+      <LanguageCapture settings={defaultSettings} />
     </div>
   );
 };

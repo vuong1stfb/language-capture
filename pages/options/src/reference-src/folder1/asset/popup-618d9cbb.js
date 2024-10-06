@@ -23,7 +23,8 @@ import {
   b2 as E,
   b3 as k,
 } from './theme-2a09837f.js';
-import { b as c, a as M, e as D } from './event-stream-738ec9a0.js';
+import { b as c, a as M } from './event-stream-738ec9a0.js';
+import { translate_a } from '../../folder2/modules/translate.js';
 const R = {
     props: ['_settings', '_popupState'],
     data() {
@@ -448,7 +449,7 @@ const R = {
           ? ((e = this.settings.personalStreamingServerPrivateKey),
             (s = M(this.settings.streamingServer.pushURL, this.settings.personalStreamingServerPublicKey)))
           : ((e = this.settings.streamingPrivateKey), (s = this.settings.streamingServer.pushURL)),
-          D(new URL(e, s), this.settings, this.mapDataObj(t));
+          translate_a(new URL(e, s), this.settings, this.mapDataObj(t));
       },
       mapDataObj(t = !1) {
         let e = {
